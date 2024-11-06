@@ -1,18 +1,5 @@
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../_metronic/layout/core'
-import {
-  ListsWidget2,
-  ListsWidget3,
-  ListsWidget4,
-  ListsWidget5,
-  ListsWidget6,
-  MixedWidget10,
-  MixedWidget11,
-  MixedWidget2,
-  StatisticsWidget5,
-  TablesWidget10,
-  TablesWidget5,
-} from '../../../_metronic/partials/widgets'
 import { AgreementLetter } from '../../../_metronic/partials/widgets/tables/AgreementLetter'
 import History from '../../../_metronic/partials/history/History'
 import { useState } from 'react'
@@ -20,7 +7,7 @@ import ListsWidget1 from '../../../_metronic/partials/widgets/lists/ListsWidget1
 import OpenAI from 'openai'
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true
 })
 
@@ -43,7 +30,7 @@ const DashboardPage = () => {
 - Nama Pihak Kedua: ${object.secondParty}
 - Objek : ${object.obj}
 - Durasi : ${object.duration}
-- Biaya sewa: ${object.cost}
+${object.cost && `- Biaya : ${object.cost}`}
 - ${object.tnc}
 - Hak dan kewajiban masing-masing pihak harus tercantum
 - Ketentuan penyelesaian sengketa jika terjadi perselisihan
@@ -63,7 +50,6 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
       })
       setResult(result.choices[0].text)
     } catch (error) {
-      console.log('err>>', error)
       setResult('Error!!!')
     } finally {
       setIsLoading(false)
