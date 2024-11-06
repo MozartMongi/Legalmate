@@ -3,10 +3,11 @@ import React from 'react'
 import {KTIcon, toAbsoluteUrl} from '../../../helpers'
 
 type Props = {
-  className: string
+  className: string,
+  result: string,
 }
 
-const AgreementLetter: React.FC<Props> = ({className}) => {
+const AgreementLetter: React.FC<Props> = ({className, result}) => {
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
@@ -19,7 +20,7 @@ const AgreementLetter: React.FC<Props> = ({className}) => {
       {/* end::Header */}
       {/* begin::Body */}
       <div className='card-body py-3'>
-        <textarea className='form-control' rows={15} placeholder='isi perjanjian...'/>
+        <textarea value={result} className='form-control' rows={35} placeholder='isi perjanjian...'/>
       </div>
       {/* end::Body */}
     </div>

@@ -1,6 +1,5 @@
 import React, {FC} from 'react'
 import {
-  ListsWidget1,
   ListsWidget2,
   ListsWidget3,
   ListsWidget4,
@@ -15,9 +14,7 @@ const Lists: FC = () => {
     <>
       {/* begin::Row */}
       <div className='row g-5 g-xl-8'>
-        <div className='col-xl-4'>
-          <ListsWidget1 className='card-xl-stretch mb-xl-8' />
-        </div>
+       
         <div className='col-xl-4'>
           <ListsWidget2 className='card-xl-stretch mb-xl-8' />
         </div>
