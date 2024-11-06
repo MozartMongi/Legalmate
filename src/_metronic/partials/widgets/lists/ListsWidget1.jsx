@@ -84,7 +84,7 @@ const ListsWidget1 = ({className, purpose, handleGenerateContent, onChangePrompt
               value={purpose}
               type="text"
               className="form-control"
-              placeholder="Pinjaman 200 juta"
+              placeholder="Jual Beli Mobil..."
               onChange={(e) => onChangePrompt(e.target.value)}
             />
             </div>
