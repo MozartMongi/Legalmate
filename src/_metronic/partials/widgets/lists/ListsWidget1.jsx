@@ -111,7 +111,7 @@ const ListsWidget1 = ({className, purpose, handleGenerateContent, onChangePrompt
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Objek</label>
+            <label className="form-label">Objek</label>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-info'>
