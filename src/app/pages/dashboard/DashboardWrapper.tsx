@@ -7,7 +7,7 @@ import ListsWidget1 from '../../../_metronic/partials/widgets/lists/ListsWidget1
 import OpenAI from 'openai'
 
 const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: process.env.REACT_APP_OPENAI_API,
   dangerouslyAllowBrowser: true
 })
 
