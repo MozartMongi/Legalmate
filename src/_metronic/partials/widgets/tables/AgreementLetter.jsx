@@ -2,12 +2,19 @@
 import React from 'react'
 import {KTIcon, toAbsoluteUrl} from '../../../helpers'
 
-type Props = {
-  className: string,
-  result: string,
-}
 
-const AgreementLetter: React.FC<Props> = ({className, result}) => {
+const AgreementLetter = ({className, result}) => {
+
+  const handleDownload = () => {
+    const element = document.createElement("a");
+    const file = new Blob([result], {
+      type: "text/plain"
+    });
+    element.href = URL.createObjectURL(file);
+    element.download = "surat-perjanjian-legalmate.txt";
+    document.body.appendChild(element);
+    element.click();
+  }
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
@@ -16,11 +23,12 @@ const AgreementLetter: React.FC<Props> = ({className, result}) => {
           <span className='card-label fw-bold fs-3 mb-1'>Surat Perjanjian</span>
           <span className='text-muted mt-1 fw-semibold fs-7'>Silahkan salin dan pindahkan isi surat perjanjian di bawah ini</span>
         </h3>
+        <button onClick={handleDownload} className="btn btn-success">Download</button>
       </div>
       {/* end::Header */}
       {/* begin::Body */}
       <div className='card-body py-3'>
-        <textarea value={result} className='form-control' rows={35} placeholder='isi perjanjian...'/>
+        <textarea value={result} className='form-control' rows={50} placeholder='isi perjanjian...'/>
       </div>
       {/* end::Body */}
     </div>
