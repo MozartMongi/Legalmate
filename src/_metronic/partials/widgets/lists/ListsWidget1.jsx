@@ -70,7 +70,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         {/* begin::Item */}
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Identitas Pihak 1</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Identitas Pihak 1</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`○ Nama lengkap para pihak yang terlibat dalam perjanjian.\n○ Alamat lengkap masing-masing pihak.\n○ Nomor identitas (KTP, paspor, dll.) jika diperlukan.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
                 <span className='symbol-label bg-light-warning'>
@@ -92,7 +101,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         {/* end::Item */}
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Identitas Pihak 2</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Identitas Pihak 2</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`○ Nama lengkap para pihak yang terlibat dalam perjanjian.\n○ Alamat lengkap masing-masing pihak.\n○ Nomor identitas (KTP, paspor, dll.) jika diperlukan.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-success'>
@@ -113,7 +131,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Tanggal & Tempat Pembuatan Perjanjian</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Tanggal & Tempat Pembuatan Perjanjian</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Tanggal dan tempat di mana perjanjian tersebut dibuat.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-info'>
@@ -134,7 +161,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Pokok Perjanjian</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Pokok Perjanjian</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Uraian jelas dan rinci mengenai hal yang menjadi objek perjanjian. \nMisalnya, dalam perjanjian jual beli, harus disebutkan secara jelas barang yang dijual beli, jumlahnya, harga, dan spesifikasi lainnya.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-info'>
@@ -155,7 +191,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Jangka waktu pelaksanaan</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Jangka waktu pelaksanaan</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Waktu mulai dan berakhirnya pelaksanaan perjanjian, jika ada.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-warning'>
@@ -176,7 +221,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Harga atau Imbalan (rupiah)</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Harga atau Imbalan (rupiah)</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Besarnya harga atau imbalan yang harus dibayar oleh salah satu pihak kepada pihak lainnya.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-success'>
@@ -197,7 +251,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Cara Pembayaran</label>
+            <div className='d-flex justify-content-between'>
+              <label className="form-label required">Cara Pembayaran</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Cara pembayaran yang disepakati, misalnya tunai, transfer, atau angsuran.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-success'>
@@ -218,7 +281,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label">Ketentuan Khusus</label>
+          <div className='d-flex justify-content-between'>
+              <label className="form-label required">Ketentuan Khusus</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Syarat-syarat tambahan yang disepakati oleh para pihak, misalnya mengenai denda keterlambatan, ganti rugi, atau penyelesaian sengketa.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-danger'>
@@ -238,7 +310,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label">Ketentuan Force Majeure</label>
+          <div className='d-flex justify-content-between'>
+              <label className="form-label required">Ketentuan Force Majeure</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Ketentuan mengenai keadaan kahar (force majeure) yang dapat menyebabkan salah satu pihak tidak dapat memenuhi kewajibannya.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-danger'>
@@ -258,7 +339,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Sanksi Perjanjian</label>
+          <div className='d-flex justify-content-between'>
+              <label className="form-label required">Sanksi Perjanjian</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Akibat hukum yang akan timbul jika salah satu pihak melanggar perjanjian.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-danger'>
@@ -279,7 +369,16 @@ Buat surat ini dalam format yang resmi dan mudah dipahami.`
         </div>
         <div className='align-items-center mb-7'>
           <div>
-            <label className="form-label required">Cara Penyelesaian Sengketa</label>
+          <div className='d-flex justify-content-between'>
+              <label className="form-label required">Cara Penyelesaian Sengketa</label>
+              <a 
+                href='#' 
+                data-bs-toggle="tooltip" 
+                title={`Tempat dan cara penyelesaian sengketa yang mungkin timbul akibat pelaksanaan perjanjian,\n misalnya melalui pengadilan atau arbitrase.`}
+              >
+                <KTIcon iconName='information-2' className='fs-2 text-dark' />
+              </a>
+            </div>
             <div className='d-flex align-items-center'>
               <div className='symbol symbol-50px me-5'>
               <span className='symbol-label bg-light-danger'>
